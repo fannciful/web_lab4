@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym - Kolizey</title>
+<link rel="stylesheet" href="main.css">
+<link href="./dist/output.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+
+</head>
+<body class="font-sans">
+  <div id="hero" class="w-full h-screen bg-cover bg-center relative" style="background-image: url('img/backgr.png');">
+    <!-- Blurred Background -->
+    <div class="absolute inset-0 bg-gray-600 bg-opacity-30 backdrop-blur-sm"></div>
+
+    <!-- Navbar -->
+    <div class="navbar w-90 mx-auto flex items-center justify-between relative z-10 pt-8">
+      <div class="logo flex items-center text-white text-xl font-bold font-serif cursor-pointer ml-6">Kolizey.</div>
+      <div class="user flex items-center">
+        <button class="px-4 py-2 border border-white rounded-full text-white text-sm font-bold mr-6 transition-colors duration-300 hover:text-black hover:bg-white">Sign In</button>
+        <input id="menu-toggle" type="checkbox" class="hidden">
+        <label for="menu-toggle" class="menu-button-container cursor-pointer">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu flex">
+          <li><a href="#" class="text-white hover:text-blue-300 mr-6">ABOUT</a></li>
+          <li><a href="#" class="text-white hover:text-blue-300 mr-6">OFFERS</a></li>
+          <li><a href="#" class="text-white hover:text-blue-300 mr-6">TRAINERS</a></li>
+          <li><a href="#" class="text-white hover:text-blue-300 mr-6">PRICE</a></li>
+          <li><a href="#" class="text-white hover:text-blue-300 mr-6">CONTACTS</a></li>
+        </ul>
+      </div>
+    </div>
+
+        
+    <div class="flex flex-col items-center justify-center relative z-10 w-full h-full text-white">
+      <h1 class="main-text font-serif font-bold text-5xl text-white mb-3 mt-28 absolute top-36 w-full text-center">ACHIEVE YOUR FITNESS GOAL</h1>
+        <p class="text-for text-white font-Raleway font-normal text-xl mt-3 px-28 text-center opacity-100">
+          Experience fitness at Kolizey, where we unlock your potential with state-of-the-art facilities and expert trainers. Join us today and unleash the champion within!
+        </p>
+      </div>    
+    </div>
+    
+      <!-- about section -->
+      <section class="bg-gray-200 flex justify-center items-center h-screen">
+        <div class="max-w-screen-lg mx-auto px-4">
+          <h2 class="text-center text-3xl font-bold">AFFORDABLE HEALTH AND WELLNESS IS OUR PRIORITY AT OUR HIGH-QUALITY GYM.</h2>
+          <p class="text-center text-lg leading-relaxed text-gray-800">
+            Welcome to <strong><em>Gym Kolizey</em></strong>, where fitness meets excellence. We are more than just a gym;
+            we are a community dedicated to helping you <ins>achieve</ins> your fitness goals and living a 
+            healthier lifestyle.
+            Our gym facility at Kolizey is designed to <del>be not</del> inspire and motivate. With top 
+            equipment and a spacious layout, you'll find everything you need to elevate your workout 
+            experience.
+          </p>
+          <hr class="my-4 border-t-1 border-gray-400">
+
+        <!-- video -->
+        <div class="max-w-screen-sm mx-auto p-4 border border-gray-300 shadow-md mt-5">
+          <video class="w-full" width="400" controls>
+            <source src="video/gym-video.mp4" type="video/mp4">
+          </video>
+        </div>
+       </div>
+      </section>
+      
+<!--photo section-->
+<h2 class="text-center text-4xl font-bold my-10">Our Trainers</h2>
+<div class="flex justify-between">
+  <div class="relative overflow-hidden rounded-lg shadow-md transition-transform transform group hover:scale-105 w-1/4 mx-12">
+        <img src="img/tr1.png" alt="Photo 1" class="w-full transition-transform">
+        <div class="absolute inset-0 bg-black bg-opacity-50 text-white p-10 hidden rounded-lg box-border group-hover:block flex items-center justify-center">
+          <div class="text-center mt-40">
+            <h1 class="text-white text-lg font-bold tracking-wide leading-relaxed">John Smit</h1>
+            <p class="text-xs text-white text-sm">
+                Certified personal coach<br>$15/hour
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="relative overflow-hidden rounded-lg shadow-md transition-transform transform group hover:scale-105 w-1/4 mx-12">
+      <img src="img/tr3.png" alt="Photo 2" class="w-full transition-transform">
+      <div class="absolute inset-0 bg-black bg-opacity-50 text-white p-10 hidden rounded-lg box-border group-hover:block flex items-center justify-center">
+          <div class="text-center mt-40">
+              <h1 class="text-white text-lg font-bold tracking-wide leading-relaxed">Olivia Krey</h1>
+              <p class="text-xs text-white text-sm">
+                  Certified pilates coach<br>$10/hour
+              </p>
+          </div>
+      </div>
+  </div>
+  <div class="relative overflow-hidden rounded-lg shadow-md transition-transform transform group hover:scale-105 w-1/4 mx-12">
+        <img src="img/tr2.png" alt="Photo 3" class="w-full transition-transform">
+        <div class="absolute inset-0 bg-black bg-opacity-50 text-white p-10 hidden rounded-lg box-border group-hover:block flex items-center justify-center">
+          <div class="text-center mt-40">
+            <h1 class="text-white text-lg font-bold tracking-wide leading-relaxed">Jack Bey</h1>
+            <p class="text-xs text-white text-sm">
+              Certified cardio kickboxing coach<br>$12/hour
+          </p>
+          </div>
+        </div>
+    </div>
+</div>
+
+<!--table-->
+<!-- schedule section -->
+<section class="bg-gray-600 flex flex-col justify-start items-center h-screen mt-20">
+  <div class="max-w-4xl mx-auto text-white flex flex-col items-center">
+    <h2 class="text-3xl font-bold mb-4 flex-grow mt-36">OUR SCHEDULE</h2>
+    <table class="w-full border-collapse mt-4">
+      <tr class="hover:bg-neutral-700">
+        <th class="border-2 border-white py-2 px-1 sm:px-2 text-center bg-neutral-500">Time</th>
+        <th class="border-2 border-white py-2 px-1 sm:px-2 text-center bg-neutral-600">Monday</th>
+        <th class="border-2 border-white py-2 px-1 sm:px-2 text-center bg-neutral-500">Tuesday</th>
+        <th class="border-2 border-white py-2 px-1 sm:px-2 text-center bg-neutral-600">Wednesday</th>
+        <th class="border-2 border-white py-2 px-1 sm:px-2 text-center bg-neutral-500">Thursday</th>
+        <th class="border-2 border-white py-2 px-1 sm:px-2 text-center bg-neutral-600">Friday</th>
+        <th class="border-2 border-white py-2 px-1 sm:px-2 text-center bg-neutral-500">Saturday</th>
+        <th class="border-2 border-white py-2 px-1 sm:px-2 text-center bg-neutral-600">Sunday</th>
+      </tr>
+      <tr class="hover:bg-neutral-700">
+        <td class="border-2 border-white p-2 px-4 text-center">9:00 AM</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Yoga</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Spin Class</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Yoga</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Body Pump</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Cardio Kickboxing</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Pilates</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Day Off</td>
+      </tr>
+      <tr class="hover:bg-neutral-700">
+        <td class="border-2 border-white py-2 px-4 text-center">12:00 PM</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Spin Class</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Pilates</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Pilates</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Zumba</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Intensive Training</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Cardio Kickboxing</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Day Off</td>
+      </tr>
+      <tr class="hover:bg-neutral-700">
+        <td class="border-2 border-white py-2 px-4 text-center">3:00 PM</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Pilates</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Cardio Kickboxing</td>
+        <td class="border-2 border-white py-2 px-4 text-center">HIIT</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Cardio Kickboxing</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Body Pump</td>
+        <td class="border-2 border-white py-2 px-4 text-center">HIIT</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Day Off</td>
+      </tr>
+      <tr class="hover:bg-neutral-700">
+        <td class="border-2 border-white py-2 px-4 text-center">6:00 PM</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Intensive Training</td>
+        <td class="border-2 border-white py-2 px-4 text-center">HIIT</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Zumba</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Spin Class</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Spin Class</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Zumba</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Day Off</td>
+      </tr>
+      <tr class="hover:bg-neutral-700">
+        <td class="border-2 border-white py-2 px-4 text-center">9:00 PM</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Zumba</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Body Pump</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Cardio Lickboxing</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Intensive Training</td>
+        <td class="border-2 border-white py-2 px-4 text-center">HIIT</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Intensive Training</td>
+        <td class="border-2 border-white py-2 px-4 text-center">Day Off</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+
+<!-- price section! -->
+<section class="min-h-screen bg-neutral-200 py-12 text-center animate-slideIn">
+  <h2 class="text-center text-3xl font-bold font-sans mt-6 mb-24">Our Price</h2>
+  <div class="flex justify-center items-stretch gap-5 mt-8">
+    <div class="flex-1 bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 h-88 w-48 mx-2 hover:transform hover:-translate-y-2">
+      <ul class="list-none p-0">
+        <li class="bg-neutral-800 text-white font-bold py-4">Basic</li>
+        <li id="basic" class="mt-5 text-2xl font-bold py-5 border-t border-gray-300">$ 199.99</li>
+        <li class="py-2 border-t border-neutral-300">8 classes</li>
+        <li class="py-2 border-t border-neutral-300">2 activities</li>
+        <li class="py-2 border-t border-neutral-300">Diploma</li>
+        <li>
+          <button class="text-lg bg-neutral-800 text-white py-3 px-8 rounded-lg cursor-pointer mt-5 mb-3 transition-colors duration-300 hover:bg-neutral-600" onclick="window.location.href='form.html'">Sign in</button>
+        </li>
+      </ul>
+    </div>
+    <div class="flex-1 bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 h-88 w-48 mx-2 hover:transform hover:-translate-y-2">
+      <ul class="list-none p-0">
+        <li class="bg-neutral-800 text-white font-bold py-4">Professional</li>
+        <li id="basic" class="mt-5 text-2xl font-bold py-5 border-t border-gray-300">$ 249.99</li>
+        <li class="py-2 border-t border-neutral-300">12 classes</li>
+        <li class="py-2 border-t border-neutral-300">5 activities</li>
+        <li class="py-2 border-t border-neutral-300">Evening trainings</li>
+        <li>
+          <button class="text-lg bg-neutral-800 text-white py-3 px-8 rounded-lg cursor-pointer mt-5 mb-3 transition-colors duration-300 hover:bg-neutral-600" onclick="window.location.href='form.html'">Sign in</button>
+        </li>
+      </ul>
+    </div>
+    <div class="flex-1 bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 h-88 w-48 mx-2 hover:transform hover:-translate-y-2">
+      <ul class="list-none p-0">
+        <li class="bg-neutral-800 text-white font-bold py-4">Master</li>
+        <li id="basic" class="mt-5 text-2xl font-bold py-5 border-t border-neutral-300">$ 449.99</li>
+        <li class="py-2 border-t border-neutral-300">16 classes</li>
+        <li class="py-2 border-t border-neutral-300">all classes</li>
+        <li class="py-2 border-t border-neutral-300">All the possibility</li>
+        <li>
+          <button class="text-lg bg-neutral-800 text-white py-3 px-8 rounded-lg cursor-pointer mt-5 mb-3 transition-colors duration-300 hover:bg-neutral-600" onclick="window.location.href='form.html'">Sign in</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!--map-->
+<section>
+  <div class="w-full">
+    <h2 class="text-center text-3xl font-bold mt-12 mb-12">Map</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5151.441366974283!2d24.071261151066683!3d49.79131737020203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae901cae61fe7%3A0xa3eb9e50bee883ac!2z0JrQvtC70ZbQt9C10Lk!5e0!3m2!1suk!2sua!4v1708557139552!5m2!1suk!2sua" class="w-full h-96"
+      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+
+<!-- footer! -->
+<footer class="w-full bg-neutral-800 text-white py-5 text-center mt-4">
+  <section id="contact" class="mb-5 mt-5">
+    <h2 class="text-lg font-semibold mb-2">Contact Us</h2>
+    <p class="text-sm mb-1">Email: kolizey@gmail.com</p>
+    <p class="text-sm mb-1">Phone: 123-345-567</p>
+  </section>
+  <p class="text-sm">&copy; 2024 Kolizey. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>
